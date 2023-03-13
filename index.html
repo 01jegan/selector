@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>SELECTORS</title>
+	 <style>
+	    *{
+		background-color:#ccc;
+		}
+	     .container{
+			margin:0 200px;
+			padding:30px;
+			background:#80808070;
+		}
+		
+	    .head{
+			text-align:center;
+		}
+		
+		.head p{
+			font-size:30px;
+			color:black;
+		}
+		p{
+			  font-size:30px;
+			  color:#d37585;
+		}
+		
+		#idsel{
+			  background-color:green;
+			  color:white;
+			  font-size:28px;
+		}
+		
+		.cls{
+			background-color:orange;
+			color:yellow;
+			font-size:25px;
+		}
+		
+		h1,h4,h5{
+			 color:white;
+			 font-size:25px;
+		}
+		
+		iv p{
+		   font-size:25px;
+		   color:black;
+		   background-color:blue;
+		   }
+		   
+		.child > p{
+		   font-size:35px;
+		   color:white;
+		   background-color:black;
+		   }
+		   
+		.adj p{
+			  background-color:white;
+		   }
+		   
+		   .adj + p{
+			background-color:yellow;
+			font-size:30px;
+		   }
+		 .gen p{
+			  background-color:white;
+		   }
+		.gen ~ p{
+			 background-color:red;
+			 font-size:30px;
+		   }
+	 </style>
+</head>
+<body>
+<section class="container">
+     <div class="head">
+     <h2> SELECTORS</h2>
+	 <p>CSS selectors are used to select the HTML elements you want to style.</p>
+	 </div>
+	 
+	 <h1 style="text-align:center">SIMPLE SELECTORS</h1>
+	 
+	 
+     <h2>ELEMENT SELECTORS:</h2>
+	 <p>The element selector selects HTML elements based on the element name.</p>
+	 
+	 <h2>ID SELECTORS:</h2>
+	 <p id="idsel">To select an element with a specific id, write a hash (#) character, followed by the id of the element.</p>
+	 
+
+	 <h2>CLASS SELECTORS:</h2>
+	 <p class="cls">To select elements with a specific class, write a period (.) character, followed by the class name.</p>
+
+     <h2>UNIVERSAL SELECTORS:</h2>
+	 <p>The universal selector (*) selects all HTML elements on the page.</p>
+	 
+	 <h2>GROUPING SELECTORS</h2>
+		<h1>Hello World!</h1>
+		<h4>Smaller heading!</h4>
+		<h5>This is a paragraph.</h5>
+		
+	<h1 style="text-align:center">CSS COMBINATORS</h1>
+	
+	<h1>DESCENDENT SELECTORS(SPACE)</h1>
+	<div>
+	<p>The following example selects all (P) elements inside (DIV) elements: </p>
+	</div>
+	
+	<h1>CHILD SELECTORS(>)</h1>
+	<div class="child">
+	<p>The child selector selects all elements that are the children of a specified element.</p>
+	</div>
+	
+	<h1>ADJACENT SIBLINGS SELECTORS</h1>
+	<div class="adj">
+	<p>The + selector is used to select an element that is directly after another specific element.</p>
+	</div>
+	
+	<p>The following example selects the first p element that are placed immediately after div elements</p>
+	
+	<h1>GENERAL SIBLINGS SELECTORS</h1>
+	<div class="gen">
+	<p>The general sibling selector (~) selects all elements that are next siblings of a specified element.</p>
+	</div>
+	
+	<p>Good Morning</p>
+    <p>Good Night</p>
+		
+</section>	
+</body>
+</html>
